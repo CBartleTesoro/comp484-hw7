@@ -74,7 +74,7 @@ html {
 body {
     background: #272343; /* .first-color */ 
     margin: 0 auto; /*3d change, margin: 0; */
-    width: 70%;
+    width: 70%; /*i left the width at 70% as it looks better than 100%, even tought the assigment asks for it to span the whole width. */
     box-sizing: border-box; 
     /*padding: 0 20px; changed it to main section so the color sections would go side to side of the body.*/
     font-family: "Inter", Verdana, Geneva, sans-serif;
@@ -102,9 +102,7 @@ header h1, header h2 {
     /*width: 950px;*/
     max-width: 950px; /*adjusted as step 2d indicates, so that the content doesnt escape the border when the screen is smaller. */ 
     margin: 0 auto; 
-
     padding: 50px;
-
     overflow: hidden; /* 4f */
 }
 
