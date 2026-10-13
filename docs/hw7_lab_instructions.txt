@@ -72,7 +72,7 @@ In this hw, you’ll continue working on your resume site. You can continue buli
             
             f. remove or comment out the width, float, and margin values from the profile-img selector. Since we'll be using these new global column styles instead to align the content. You can keep the border-radius: 50%; property. 
             
-            g. Back in your html file add divs and classes to your Work Experince section to apply our new styling.
+            g. Back in your html file add divs and classes to your Work Experince section to apply our new styling. (Completed at PROJECT section instead of work section since there is no work section.)
                 i. add a new <div class="column-narrow"> that contatins the h3 Job tile, p Company Name, and p Date at job tags in your Job Details section. 
                 ii. add a new <div class="column-wide"> that contatins the p Job summary, p Optional list, and the ul tags in you Job Details section. 
                 iii. make sure to add that to all your job items.. 
