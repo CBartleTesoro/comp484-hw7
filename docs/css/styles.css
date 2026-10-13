@@ -127,21 +127,34 @@ h2 {
     justify-content: center;
 }
 
-
-
-.profile-image {
-    width: 300px;  
-    /*height: 300px; */
-    border-radius:50%;
-    float: left; /*4e */
-    margin-right: 30px; /* 4g */
+.column-narrow { /*6d */
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
 }
 
+.column-wide { /*6e */
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
 
+.profile-image {
+    /*width: 300px;  */
+    border-radius:50%;
+    /*float: left; /*4e */ 
+    /*margin-right: 30px; /* 4g */
+
+    /* with, float and margin comment out due indications in 6f */
+}
+
+/* no longer in use
 .profile-text {
     padding-right: 40px;
     box-sizing: border-box;
 }
+*/
 
 /*So my Name and the occupation have less spacing between them, as it was a lot at first once changing the fonts */
 /*
