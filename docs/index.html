@@ -14,17 +14,15 @@
 <body class="first-color"> <!-- applied the first-color to the body element in the CSS, but I also kept the class as thats how I first implemented it. The difference is that if its on the body, it applies to all htmls that use the default body, while each body with a specific class gets that overwritten by the class one.-->
     <!-- // Intro -->
     <header class="fourth-color">
-
-        <div class="profile-container">
-            <img src="images/bartle.png" alt="Profile Picture">
-        </div>
-        <!-- <img src="your-picture.jpg" alt="Christian Bartle"> -->
-        <div class="profile-text">
-            <h1 class="raleway-font1">Christian Bartle</h1>
-            <h2>Undergraduate Computer Science Student</h2> <!-- Job title or tagline -->
-            <p>My academic path began in engineering and robotics, where I built a strong foundation in
-               programming, systems thinking, and applied problem-solving, before transitioning fully into
-               software development.</p> <!-- Add your profile summary here. You can have several paragraphs or add links.-->
+        <div class="content-wrap">
+            <img class = "profile-image" src="images/bartle.png" alt="Profile Picture">
+            <div class="profile-text">
+                <h1 class="raleway-font1">Christian Bartle</h1>
+                <h2>Undergraduate Computer Science Student</h2> <!-- Job title or tagline -->
+                <p>My academic path began in engineering and robotics, where I built a strong foundation in
+                programming, systems thinking, and applied problem-solving, before transitioning fully into
+                software development.</p> <!-- Add your profile summary here. You can have several paragraphs or add links.-->
+            </div>
         </div>
     </header>
     
@@ -61,54 +59,60 @@
 
         <!-- // Education -->
         <section class="education second-color"> <!-- two classes, education, and a color class-->
-            <h2>Education</h2>
-            <!-- in this case i didnt add the color change to education itself, since education is pretty specific and i already had the color class defined, so instead i added two classes.-->
+            <div class="content-wrap">
+                <h2>Education</h2>
+                <!-- in this case i didnt add the color change to education itself, since education is pretty specific and i already had the color class defined, so instead i added two classes.-->
 
-            <!-- School details: copy this whole block to add more schools. -->
-            
-            
-            <h3>California State University Northridge (CSUN) - Northridge.</h3>
-            <p style="color: grey;">JAN 2025 - PRESENT</p>
-            <p> GPA 4.0</p>
+                <!-- School details: copy this whole block to add more schools. -->
+                
+                
+                <h3>California State University Northridge (CSUN) - Northridge.</h3>
+                <p style="color: grey;">JAN 2025 - PRESENT</p>
+                <p> GPA 4.0</p>
 
-            <h3>Pierce College - Woodland Hills.</h3>
-            <p style="color: grey;">FEB 2024 - DEC 2024</p>
-            <p> GPA 4.0</p>
-            <ul>
-                <li>Completed transfer coursework in preparation for transfer to CSUN.</li>
-                <li>Coursework included college-level English composition, argumentation & debate, U.S. history, anthropology and political science</li> 
-                <li>GPA: 4.0</li>
-            </ul>
+                <h3>Pierce College - Woodland Hills.</h3>
+                <p style="color: grey;">FEB 2024 - DEC 2024</p>
+                <p> GPA 4.0</p>
+                <ul>
+                    <li>Completed transfer coursework in preparation for transfer to CSUN.</li>
+                    <li>Coursework included college-level English composition, argumentation & debate, U.S. history, anthropology and political science</li> 
+                    <li>GPA: 4.0</li>
+                </ul>
 
-            <h3>Mechatronics Engineering, UTEC - University of Engineering and Technology - Lima, Peru.</h3>
-            <p style="color: grey;">MAR 2017 - DEC 2021</p>
-            <!--<p> GPA X.X </p>  Grading system in Peru is different from the US system.-->
+                <h3>Mechatronics Engineering, UTEC - University of Engineering and Technology - Lima, Peru.</h3>
+                <p style="color: grey;">MAR 2017 - DEC 2021</p>
+                <!--<p> GPA X.X </p>  Grading system in Peru is different from the US system.-->
 
-            <h3>InnovaSchools - Chaclacayo - Lima, Peru.</h3>
-            <p style="color: grey;">Highschool diploma, 2015</p>
-            <!--
-            <h3>School name, year you attended</h3>
-            <p>Designation received</p>
-            -->
-            <!-- Add as many paragraphs as you need. -->
-            <!--<p>Summary.</p> -->
-            <!-- End of school details. -->
+                <h3>InnovaSchools - Chaclacayo - Lima, Peru.</h3>
+                <p style="color: grey;">Highschool diploma, 2015</p>
+                <!--
+                <h3>School name, year you attended</h3>
+                <p>Designation received</p>
+                -->
+                <!-- Add as many paragraphs as you need. -->
+                <!--<p>Summary.</p> -->
+                <!-- End of school details. -->
+            </div>
         </section>
 
         <section class="projects third-color"> <!-- two classes, projects, and a color class-->
-            <h2>Projects</h2>
-            <h3>Automated Temperature & Water Level Control System</h3>
-            <ul>
-                <li>Designed and prototyped an automated water agitation system with temperature and level control</li>
-                <li>Implemented control logic using microcontrollers and sensor feedback</li>
-                <li>Integrated hardware and software components to achieve reliable autonomous operation</li>
-            </ul>
+            <div class="content-wrap">
+                <h2>Projects</h2>
+                <h3>Automated Temperature & Water Level Control System</h3>
+                <ul>
+                    <li>Designed and prototyped an automated water agitation system with temperature and level control</li>
+                    <li>Implemented control logic using microcontrollers and sensor feedback</li>
+                    <li>Integrated hardware and software components to achieve reliable autonomous operation</li>
+                </ul>
+            </div>
         </section>
         <section class="volunteer fourth-color"> <!-- two classes, volunteer, and a color class-->
-            <h2>Volunteer Work</h2>
-            <h3>UTEC Educational Startup, Lima</h3>
-            <p style="color: grey;">JAN 2018 - DEC 2018</p>
-            <p>Taught introductory programming concepts to children and adolescents over two semesters.</p>
+             <div class="content-wrap">
+                <h2>Volunteer Work</h2>
+                <h3>UTEC Educational Startup, Lima</h3>
+                <p style="color: grey;">JAN 2018 - DEC 2018</p>
+                <p>Taught introductory programming concepts to children and adolescents over two semesters.</p>
+            </div>
         </section>
         <!--
         <section class="reference ">
@@ -120,18 +124,20 @@
     
     <!-- // Footer & contact info -->
     <footer class="first-color">
-        <h2 class="courgette-regular-font3 textlight">Let's Keep in Touch!</h2>
-        
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <div>
-            <a href="cbartle183@gmail.com">cbartle183@gmail.com</a>
-            <!--<a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a> i do not have a personal website yet-->
-            <!-- <a href="#" target="_blank">Twitter</a> i dont use twitter-->
-            <!--<a href="#" target="_blank">LinkedIn</a> I havent updated my linkedin to match my resume yet-->
-            <!-- <a href="#" target="_blank">Facebook</a> stopped used facebook almost a decade ago.-->
-        </div>
+        <div class="content-wrap">
+            <h2 class="courgette-regular-font3 textlight">Let's Keep in Touch!</h2>
+            
+            <!-- Social media and contact links. Add or remove any networks. -->
+            <div class="contact-info">
+                <a href="cbartle183@gmail.com">cbartle183@gmail.com</a>
+                <!--<a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a> i do not have a personal website yet-->
+                <!-- <a href="#" target="_blank">Twitter</a> i dont use twitter-->
+                <!--<a href="#" target="_blank">LinkedIn</a> I havent updated my linkedin to match my resume yet-->
+                <!-- <a href="#" target="_blank">Facebook</a> stopped used facebook almost a decade ago.-->
+            </div>
 
-        <p class="textlight">Copyright 2026 by Christian Bartle</p>
+            <p class="textlight">Copyright 2026 by Christian Bartle</p>
+        </div>
     </footer>
 </body>
 </html>

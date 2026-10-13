@@ -64,11 +64,16 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    box-sizing: border-box; /* 5a */
 } 
+*, *:before, *:after { /* 5a */
+    box-sizing: inherit;
+}
 
 body {
-    background: #272343; /* .first-color , appplied here means that it will show on any html, not just index. It is also applied as a class in the index, however that was because I first got the color palete in the format of a class from the website i found it from, so it was convinient that way. Ive kept both in the document, as the assigment indicates to use the color change for each part in CSS, not in the html as a class. I hope that is fine. */ 
-    margin: 0 auto;
+    background: #272343; /* .first-color */ 
+    margin: 0 auto; /*3d change, margin: 0; */
     width: 70%;
     box-sizing: border-box; 
     /*padding: 0 20px; changed it to main section so the color sections would go side to side of the body.*/
@@ -83,12 +88,32 @@ body {
 
 header {
     background: #bae8e8; /* .fourth-color */
-    display: flex;
+    /*display: flex; */
     align-items: center;
     padding: 0 40px;
 }
 
+header h1, header h2 {
+    margin: 0;  /* 4d */
+} 
 
+
+.content-wrap {
+    /*width: 950px;*/
+    max-width: 950px; /*adjusted as step 2d indicates, so that the content doesnt escape the border when the screen is smaller. */ 
+    margin: 0 auto; 
+
+    padding: 50px;
+
+    overflow: hidden; /* 4f */
+}
+
+h2 {
+    margin-top: 0; /*removed the padding on top as indicated in 3b. */
+}
+
+
+/* No longer in use, in order for the float to work in image as indicated by the hw7 assigment, this needed to be removed for it to take effect*/
 .profile-container { /* Profile picture styles, in order to get that round look */
     width: 250px;
     height: 250px;
@@ -102,14 +127,16 @@ header {
     justify-content: center;
 }
 
-.profile-container img { /* Profile picture inside the container */
-    width: 80%;  
-    height: 80%;
-    border-radius: 50%;
-    border: 6px solid black; /*little border on the picture */
-    object-fit: cover;
-    /*The width and height at 80% are in order to change the picture size inside the container without changing the container size. Previously the image would look pixelated as it was bigger than intended. */
+
+
+.profile-image {
+    width: 300px;  
+    /*height: 300px; */
+    border-radius:50%;
+    float: left; /*4e */
+    margin-right: 30px; /* 4g */
 }
+
 
 .profile-text {
     padding-right: 40px;
@@ -117,6 +144,7 @@ header {
 }
 
 /*So my Name and the occupation have less spacing between them, as it was a lot at first once changing the fonts */
+/*
 .profile-text h1 {
   margin: 0 0 0.15em;
 }
@@ -124,11 +152,17 @@ header {
 .profile-text h2 {
   margin-top: 0;
 }
+removed these 2 from prior hw6 as it is adressed in step 4d  */
 
 footer {
     padding: 20px 60px;
-    text-align: center;
+    text-align: center; /* alliged as indicated in 3e */
     background:#272343; /* .first-color */
+}
+
+.contact-info a{ /* 3g */
+  padding: 10px; 
+  display: inline-block;
 }
 
 /* Education, Projects and Volunteer work.

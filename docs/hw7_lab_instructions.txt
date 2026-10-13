@@ -36,6 +36,16 @@ In this hw, you’ll continue working on your resume site. You can continue buli
 
             b. In the HTML add a class inside the image tag and name it profile-img. That way you can make sure to target only this image in the CSS. Also add it to the header section in your CSS (.profile-img{}). Inside that selector set the (width: 300px;). You don't need to set the height, because by setting the width, the height will automatically adjust to maintain the aspect ratio of the image. Go ahead and save the file and check your changes in the browser.
 
+            ---removed this prior section from hw6: 
+            .profile-container img { /* Profile picture inside the container */
+                width: 80%;  
+                height: 80%;
+                border-radius: 50%;
+                border: 6px solid black; /*little border on the picture */
+                object-fit: cover;
+                /*The width and height at 80% are in order to change the picture size inside the container without changing the container size. Previously the image would look pixelated as it was bigger than intended. */
+            }
+
             c. Add one more CSS style to .profile-image selector called border-radius give it a value of 50%. (border-radius:50%;) Save it and go back to the browser.
 
             d. The next thing we're going to do is tighten up the header design by removing some margins. I want the h1 name  and the h2 tagline to be closer together so remove the margin from both of these h1s and h2 headings. Back in your CSS go to your header h1, header h2 selector and add (margin: 0;) there. Go ahead and go back to the browser and check for your changes.
