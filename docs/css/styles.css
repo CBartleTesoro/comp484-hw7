@@ -1,0 +1,157 @@
+/* Color Palette
+# - color 1: #272343
+# - color 2: #ffffff
+# - color 3: #e3f6f5
+# - color 4: #bae8e8
+*/
+
+/* Online collor pallete, adquiered from https://www.shecodes.io/palettes */
+
+.first-color { 
+	background: #272343; 
+}
+	
+.second-color { 
+	background: #ffffff; 
+}
+
+.third-color { 
+	background: #e3f6f5; 
+}
+
+.fourth-color { 
+	background: #bae8e8; 
+}
+/* since it came from the website with the structure, rather than chaning the background color on each section, i intead used classes on the html index sections in order to apply them */
+
+/*Ive realized that changing the part like header/body themselve would also apply on a new html file without having to re-write the class, so ive also applied it to them instead.*/
+
+/* Global styles 
+------------------------------------*/
+
+.raleway-font1 {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 3em;
+}
+
+
+.inter-font2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.courgette-regular-font3, h2 {  /* i am using this font for titles, etc. Ive added h2 so it affects all h2 headers. */
+  font-family: "Courgette", cursive;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 2em;
+}
+/* i wanted to use a different cursive text type for the subtiles, but not the same for the Name at the top, which is why i imported a third font for the subtitles */
+
+
+.textlight {
+  color: #9fd3c7;
+}
+
+html {
+    background-image: url("../images/MachuPicchu.jpg"); /*Picture from project 1, i like it */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+} 
+
+body {
+    background: #272343; /* .first-color , appplied here means that it will show on any html, not just index. It is also applied as a class in the index, however that was because I first got the color palete in the format of a class from the website i found it from, so it was convinient that way. Ive kept both in the document, as the assigment indicates to use the color change for each part in CSS, not in the html as a class. I hope that is fine. */ 
+    margin: 0 auto;
+    width: 70%;
+    box-sizing: border-box; 
+    /*padding: 0 20px; changed it to main section so the color sections would go side to side of the body.*/
+    font-family: "Inter", Verdana, Geneva, sans-serif;
+}
+
+/* End of global styles */
+
+/* Header & Footer 
+------------------------------------*/
+
+
+header {
+    background: #bae8e8; /* .fourth-color */
+    display: flex;
+    align-items: center;
+    padding: 0 40px;
+}
+
+
+.profile-container { /* Profile picture styles, in order to get that round look */
+    width: 250px;
+    height: 250px;
+    flex: 0 0 250px;
+    border-radius: 50%;
+    /*background: black;*/
+    object-fit: cover;
+    overflow: hidden; /*so the parts of the image outside of the desired circle dont show*/
+    display: flex;         /*Safely centers the image inside(optional) */
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-container img { /* Profile picture inside the container */
+    width: 80%;  
+    height: 80%;
+    border-radius: 50%;
+    border: 6px solid black; /*little border on the picture */
+    object-fit: cover;
+    /*The width and height at 80% are in order to change the picture size inside the container without changing the container size. Previously the image would look pixelated as it was bigger than intended. */
+}
+
+.profile-text {
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+/*So my Name and the occupation have less spacing between them, as it was a lot at first once changing the fonts */
+.profile-text h1 {
+  margin: 0 0 0.15em;
+}
+
+.profile-text h2 {
+  margin-top: 0;
+}
+
+footer {
+    padding: 20px 60px;
+    text-align: center;
+    background:#272343; /* .first-color */
+}
+
+/* Education, Projects and Volunteer work.
+------------------------------------*/
+
+main section {
+    padding: 0 60px;
+} 
+
+.education, .projects, .volunteer, .reference {
+    /* changing color by adding another class in the index in the same section */
+    
+    padding-top: 10px;
+    padding-bottom: 20px;
+    /* sides are still 60px due inherance */
+}
+
+.education h3, .volunteer h3 {
+  margin-block: 0.30em;
+  margin-top: 0.8em;
+}
+.education p, .volunteer p {  /* to reduce space between paragraphs, titles, only in education and volunteer sections */
+  margin-block: 0.30em;
+}
+
+

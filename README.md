@@ -1,1 +1,11 @@
-# comp484-hw6-2
+
+
+# COMP 484 Homework 6
+
+This project was part of the COMP 484 homework 6. The assignment focused on creating a basic baseline for a resume site.
+
+## Live Demo
+
+You can view the published website here:  
+[Live Website on GitHub Pages](https://cbartletesoro.github.io/comp484-hw6/)
+
